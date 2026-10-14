@@ -1,0 +1,274 @@
+.rent-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+    padding: 20px 40px;
+    background: #ffffff;
+}
+
+.rent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rent-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 25px;
+    background: #e9e9e9;
+    border-radius: 30px 30px 30px 3px;
+}
+
+.rent-card-image {
+    position: relative;
+}
+
+.rent-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.rent-info h3 {
+    margin: 10px 0 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.rent-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #444444;
+}
+
+.rent-icons div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rent-icons img {
+    width: 14px;
+}
+
+.rent-meta {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.rent-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 28px 0 0;
+}
+
+.rent-bottom .price {
+    margin: 0;
+    font-size: 12px;
+    color: #333333;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #2f4f4f;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.more-btn {
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #2f4f4f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.card-like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card-like:hover {
+    transform: scale(1.1);
+}
+
+.map {
+    z-index: 1;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+    .rent-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 12px 16px;
+    }
+    .rent-list {
+        order: 1;
+    }
+    .map {
+        order: 2;
+        width: 100%;
+        height: 320px;
+        border-radius: 16px;
+    }
+    .rent-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        border-radius: 16px 16px 16px 3px;
+        overflow: hidden;
+    }
+    .rent-card:active {
+        transform: scale(0.98);
+    }
+    .rent-img {
+        height: 200px;
+    }
+    .card-like {
+        top: 12px;
+        right: 12px;
+        width: 28px;
+    }
+    .rent-info {
+        padding: 0 16px 16px;
+    }
+    .rent-info h3 {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .rent-icons {
+        gap: 12px;
+        font-size: 13px;
+    }
+    .rent-icons img {
+        width: 14px;
+    }
+    .rent-meta {
+        font-size: 12px;
+    }
+    .rent-bottom {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 8px 0 0;
+    }
+    .rent-bottom .price {
+        font-size: 14px;
+    }
+    .badge {
+        padding: 4px 14px;
+        font-size: 12px;
+    }
+    .more-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rent-layout {
+        gap: 16px;
+        padding: 8px 12px;
+    }
+    .map {
+        height: 250px;
+        border-radius: 12px;
+    }
+    .rent-card {
+        gap: 8px;
+        border-radius: 12px 12px 12px 3px;
+    }
+    .rent-img {
+        height: 160px;
+    }
+    .card-like {
+        top: 10px;
+        right: 10px;
+        width: 22px;
+    }
+    .rent-info {
+        padding: 0 12px 12px;
+    }
+    .rent-info h3 {
+        margin-bottom: 4px;
+        font-size: 14px;
+    }
+    .rent-icons {
+        gap: 8px;
+        font-size: 11px;
+    }
+    .rent-icons img {
+        width: 12px;
+        height: 12px;
+    }
+    .rent-meta {
+        font-size: 11px;
+    }
+    .rent-bottom {
+        gap: 6px;
+        margin-top: 6px;
+    }
+    .rent-bottom .price {
+        font-size: 12px;
+    }
+    .badge {
+        padding: 3px 12px;
+        border-radius: 12px;
+        font-size: 11px;
+    }
+    .more-btn {
+        padding: 6px 14px;
+        border-radius: 16px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .map {
+        height: 200px;
+        border-radius: 10px;
+    }
+    .rent-img {
+        height: 130px;
+    }
+    .rent-info h3 {
+        font-size: 13px;
+    }
+    .rent-icons {
+        gap: 6px;
+        font-size: 10px;
+    }
+    .rent-icons img {
+        width: 10px;
+        height: 10px;
+    }
+    .rent-meta {
+        font-size: 10px;
+    }
+    .badge {
+        padding: 2px 10px;
+        font-size: 10px;
+    }
+    .rent-bottom .price {
+        font-size: 11px;
+    }
+    .more-btn {
+        padding: 5px 12px;
+        font-size: 11px;
+    }
+}

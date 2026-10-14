@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&family=Poppins:wght@300;400;500;600&display=swap');
+.rent-page {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rent-page * {
+    box-sizing: border-box;
+}
+
+.rent-hero {
+    position: relative;
+    width: 100%;
+    height: 355px;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-card {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 530px;
+    height: 235px;
+    background: #f6f5f3;
+    border-radius: 0 34px 34px 0;
+}
+
+.hero-card h1 {
+    margin: 0 40px 16px;
+    font-family: 'Viaoda Libre', serif;
+    font-size: 38px;
+    line-height: 47px;
+    font-weight: 400;
+    color: #161616;
+}
+
+.hero-card p {
+    margin: 0 40px;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #555;
+}
+
+.rent-page>section:not(.rent-hero) {
+    margin: 72px 80px 0;
+}
+
+.future-section {
+    display: flex;
+    height: 240px;
+    background: #ebe8e8;
+    border-radius: 0 34px 34px 34px;
+    overflow: hidden;
+}
+
+.future-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    height: 100%;
+}
+
+.future-left img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.future-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.future-right h2 {
+    margin: 0 40px 16px;
+    font-family: 'Viaoda Libre', serif;
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 400;
+    color: #181818;
+}
+
+.future-right p {
+    margin: 0 40px;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #555;
+}
+
+.advantages h2 {
+    margin: 0 0 16px;
+    font-family: 'Viaoda Libre', serif;
+    font-size: 54px;
+    line-height: 58px;
+    font-weight: 400;
+    text-align: center;
+    color: #1d1d1d;
+}
+
+.advantages-subtitle {
+    width: 500px;
+    margin: 0 auto 40px;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    text-align: center;
+    color: #666;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.adv-card {
+    display: flex;
+    align-items: flex-start;
+    height: 135px;
+    background: #dfe6de;
+    border-radius: 18px;
+    transition: transform .3s ease;
+}
+
+.adv-card:hover {
+    transform: translateY(-4px);
+}
+
+.adv-card img {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    margin: 24px 0 0 24px;
+}
+
+.adv-content {
+    margin: 24px 24px 0 16px;
+}
+
+.adv-card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #181818;
+}
+
+.adv-card p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555;
+}
+
+.locations-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locations-section h2 {
+    margin: 0 0 40px;
+    font-family: 'Viaoda Libre', serif;
+    font-size: 56px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #1c1c1c;
+}
+
+.locations-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.location-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 132px;
+}
+
+.location-card span {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #2a2a2a;
+}
+
+.location-card img {
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 22px;
+    transition: transform .35s ease;
+}
+
+.location-card img:hover {
+    transform: translateY(-5px);
+}
+
+.locations-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 330px;
+    height: 72px;
+    border: 1px solid #2f2f2f;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1e1e1e;
+    transition: background .3s ease;
+}
+
+.locations-btn:hover {
+    background: #f6f6f6;
+}
+
+.estate-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 620px;
+}
+
+.estate-info {
+    flex: 0 0 420px;
+}
+
+.estate-info-content {
+    animation: slideText .7s ease;
+}
+
+.estate-tag {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.estate-info h2 {
+    margin: 16px 0 0;
+    font-family: 'Viaoda Libre', serif;
+    font-size: 64px;
+    line-height: 65px;
+    color: #181818;
+}
+
+.estate-info h4 {
+    margin: 16px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+}
+
+.estate-info p {
+    max-width: 330px;
+    margin: 24px 0 0;
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+}
+
+.estate-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.estate-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 56px;
+    border: 1px solid #181818;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .25s ease, color .25s ease;
+}
+
+.estate-actions button:hover {
+    background: #181818;
+    color: #ffffff;
+}
+
+.estate-actions span {
+    font-size: 24px;
+    color: #181818;
+}
+
+.estate-image-wrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.estate-image {
+    object-fit: contain;
+    animation: slideImage .8s ease;
+}
+
+.estate-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 72px;
+}
+
+.estate-dot {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 999px;
+    background: #d1d1d1;
+    cursor: pointer;
+    transition: width .3s ease, background .3s ease;
+}
+
+.estate-dot.active {
+    width: 42px;
+    background: #181818;
+}
+
+@keyframes slideImage {
+    from {
+        opacity: 0;
+        transform: translateX(120px) scale(.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes slideText {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.blog-section {
+    overflow: hidden;
+}
+
+.blog-section .section-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.blog-section .section-title h2 {
+    margin: 0 0 16px;
+    font-family: 'Viaoda Libre', serif;
+    font-size: 54px;
+    line-height: 58px;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+.blog-section .section-title p {
+    width: 420px;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #666;
+}
+
+.blog-slider {
+    display: flex;
+    gap: 18px;
+    transition: transform .6s ease;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 235px;
+    height: 360px;
+    background: #f6f5f3;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: transform .3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+}
+
+.blog-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.blog-content h3 {
+    margin: 16px 16px 8px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #181818;
+}
+
+.blog-content p {
+    margin: 0 16px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #666;
+}
+
+.blog-time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: auto 16px 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e4e4e4;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1d1d1d;
+}
+
+.blog-time img {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.read-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 58px;
+    margin: 40px auto 0;
+    border: 1px solid #2f2f2f;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e1e1e;
+    transition: background .3s ease;
+}
+
+.read-more-btn:hover {
+    background: #f5f5f5;
+}
+
+.rent-footer {
+    width: 100%;
+    margin-top: 72px;
+    background: #f6f5f3;
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 80px 0;
+}
+
+.footer-brand {
+    max-width: 280px;
+}
+
+.footer-brand h2 {
+    margin: 0 0 16px;
+    font-family: 'Viaoda Libre', serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #181818;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
+
+.footer-column h4 {
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #181818;
+}
+
+.footer-column a,
+.footer-column span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #181818;
+}
+
+.footer-bottom {
+    margin: 40px 80px 0;
+    padding: 16px 0 24px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+}
+
+@media (max-width: 1100px) {
+    .hero-card {
+        top: 30px;
+        left: 40px;
+        width: 460px;
+        height: auto;
+    }
+    .hero-card h1 {
+        margin: 24px 24px 16px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .hero-card p {
+        margin: 0 24px 24px;
+    }
+    .rent-hero {
+        height: 330px;
+    }
+    .hero-image {
+        height: 330px;
+    }
+    .rent-page>section:not(.rent-hero) {
+        margin: 72px 40px 0;
+    }
+    .future-section {
+        height: 220px;
+    }
+    .future-left img {
+        height: 110px;
+    }
+    .future-right h2 {
+        margin: 24px 24px 16px;
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .future-right p {
+        margin: 0 24px 24px;
+    }
+    .advantages h2 {
+        font-size: 46px;
+    }
+    .location-card img {
+        width: 110px;
+        height: 110px;
+    }
+    .estate-slider {
+        gap: 25px;
+    }
+    .estate-info {
+        flex-basis: 360px;
+    }
+    .estate-info h2 {
+        font-size: 52px;
+        line-height: 55px;
+    }
+    .blog-card {
+        width: 210px;
+    }
+    .footer-content,
+    .footer-bottom {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-card {
+        top: auto;
+        right: 24px;
+        bottom: 16px;
+        left: 24px;
+        width: auto;
+        height: auto;
+        border-radius: 0 20px 20px 0;
+    }
+    .hero-card h1 {
+        margin: 24px 24px 8px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .hero-card p {
+        margin: 0 24px 24px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .rent-hero {
+        height: 320px;
+    }
+    .hero-image {
+        height: 320px;
+    }
+    .rent-page>section:not(.rent-hero) {
+        margin: 48px 24px 0;
+    }
+    .future-section {
+        flex-direction: column;
+        height: auto;
+    }
+    .future-left,
+    .future-right {
+        width: 100%;
+    }
+    .future-left img {
+        height: 105px;
+    }
+    .future-right {
+        height: auto;
+        padding: 24px 0;
+    }
+    .future-right h2,
+    .future-right p {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    .advantages-subtitle {
+        width: 100%;
+    }
+    .advantages h2 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .adv-card {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 24px;
+    }
+    .adv-content {
+        margin: 16px 24px 0;
+    }
+    .locations-section h2 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .locations-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .location-card {
+        width: 100%;
+    }
+    .location-card img {
+        width: 100%;
+        height: 130px;
+    }
+    .location-card span {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+    .locations-btn {
+        width: 260px;
+        height: 58px;
+        font-size: 15px;
+    }
+    .estate-slider {
+        flex-direction: column;
+        min-height: auto;
+        gap: 16px;
+        text-align: center;
+    }
+    .estate-info {
+        flex: none;
+        width: 100%;
+    }
+    .estate-info h2 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .estate-info p {
+        max-width: none;
+        font-size: 13px;
+    }
+    .estate-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .estate-image {
+        max-width: 90%;
+    }
+    .blog-section .section-title h2 {
+        font-size: 38px;
+    }
+    .blog-section .section-title p {
+        width: 100%;
+    }
+    .blog-card {
+        width: 200px;
+    }
+    .footer-content,
+    .footer-bottom {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-card p {
+        display: none;
+    }
+    .future-left img {
+        height: 85px;
+    }
+    .location-card img {
+        height: 120px;
+    }
+}

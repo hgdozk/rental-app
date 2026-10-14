@@ -1,0 +1,322 @@
+@import 'leaflet/dist/leaflet.css';
+
+.map-marker {
+    width: 46px;
+    height: 46px;
+    background: #e6efe9;
+    border: 4px solid #2f4f4f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2f4f4f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+    margin-top: 60px;
+}
+
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background: #f3f3f3;
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.form h1 {
+    margin-bottom: 10px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-text {
+    color: #666;
+}
+
+.nav-link {
+    color: #2f5d57;
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.inputs input {
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background: #e5e5e5;
+    outline: none;
+}
+
+.checkbox {
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    height: 10px;
+    width: 10px;
+    border: black solid 2px;
+}
+
+.login {
+    margin-top: 20px;
+}
+
+.login span {
+    color: #2f5d57;
+}
+
+.terms {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #777;
+}
+
+.terms span {
+    color: #2f5d57;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-name {
+    color: #333;
+    font-weight: 500;
+}
+
+.logout-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.logout-btn:hover {
+    background: #f0f0f0;
+}
+
+.map-marker {
+    width: 46px;
+    height: 46px;
+    background: #e6efe9;
+    border: 4px solid #2f4f4f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2f4f4f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .map-marker {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 10px !important;
+        border-width: 3px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-marker {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 9px !important;
+        border-width: 2px !important;
+    }
+}
+
+.leaflet-control-zoom {
+    margin: 12px !important;
+}
+
+.leaflet-control-zoom a {
+    width: 32px !important;
+    height: 32px !important;
+    line-height: 32px !important;
+    font-size: 16px !important;
+}
+
+@media (max-width: 480px) {
+    .leaflet-control-zoom {
+        margin: 8px !important;
+    }
+    .leaflet-control-zoom a {
+        width: 28px !important;
+        height: 28px !important;
+        line-height: 28px !important;
+        font-size: 14px !important;
+    }
+}
+
+.user-menu:hover .user-dropdown {
+    display: block !important;
+}
+
+.user-dropdown {
+    display: none;
+}
+
+.form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.switch {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.switch button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.switch button:hover {
+    background: #f0f0f0;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #ffc107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.form button[type="submit"]:hover {
+    background: #ffb300;
+}
+
+.form button:last-child {
+    width: 100%;
+    padding: 10px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:last-child:hover {
+    background: #e0e0e0;
+}
+
+.booking-card-modern {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 20px;
+}
+
+.calendar-info {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e8f0fe;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.report-info {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f0f8ff;
+    border-radius: 5px;
+}
+
+.chat-section {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    padding: 8px 16px;
+    background: #ffc107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-btn {
+    background: #ffc107;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+}

@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&family=Poppins:wght@300;400;500;600&display=swap');
+.realtors-page {
+    min-height: 100vh;
+    background: #f6f5f3;
+    padding: 60px 30px 90px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.realtors-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.realtors-title {
+    font-family: 'Viaoda Libre', serif;
+    font-size: 56px;
+    font-weight: 400;
+    color: #181818;
+    margin-bottom: 12px;
+}
+
+.realtors-subtitle {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 42px;
+    font-weight: 300;
+}
+
+.realtors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.realtor-card {
+    width: 100%;
+    height: 460px;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .25s ease;
+    box-sizing: border-box;
+}
+
+.realtor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .06);
+}
+
+.realtor-photo-wrapper {
+    margin-bottom: 18px;
+}
+
+.realtor-photo {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.realtor-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #181818;
+    margin: 0;
+    text-align: center;
+}
+
+.realtor-role {
+    margin-top: 6px;
+    margin-bottom: 18px;
+    font-size: 13px;
+    color: #9a9a9a;
+    font-weight: 300;
+}
+
+.realtor-rating {
+    min-height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.rating-stars-display {
+    color: #f7b500;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.rating-value {
+    margin-left: 6px;
+    color: #181818;
+    font-size: 14px;
+}
+
+.rating-count {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #888;
+}
+
+.no-rating {
+    font-size: 14px;
+    color: #999;
+}
+
+.realtor-email {
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 22px;
+    min-height: 40px;
+    word-break: break-word;
+}
+
+.realtor-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+.contact-btn,
+.rate-btn {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .25s ease;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn {
+    background: #20484a;
+    color: white;
+}
+
+.contact-btn:hover {
+    background: #173638;
+}
+
+.rate-btn {
+    background: #ececec;
+    color: #181818;
+}
+
+.rate-btn:hover {
+    background: #dddddd;
+}
+
+.no-realtors {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    padding: 60px 0;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.request-modal,
+.rate-modal {
+    background: white;
+    border-radius: 24px;
+    width: 95%;
+    max-width: 520px;
+    padding: 34px;
+}
+
+.request-modal h2,
+.rate-modal h2 {
+    font-family: 'Viaoda Libre', serif;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.realtor-info-in-modal {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: #f6f6f6;
+    border-radius: 18px;
+    padding: 14px;
+    margin-bottom: 20px;
+}
+
+.realtor-info-in-modal img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.form-group {
+    margin-top: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #181818;
+}
+
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 14px;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.submit-request-btn,
+.submit-rating-btn,
+.cancel-btn {
+    flex: 1;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-request-btn,
+.submit-rating-btn {
+    background: #20484a;
+    color: white;
+}
+
+.cancel-btn {
+    background: #ececec;
+}
+
+.rating-stars-large {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.rating-star {
+    font-size: 42px;
+    cursor: pointer;
+    color: #d5d5d5;
+    transition: .2s;
+}
+
+.rating-star.active {
+    color: #f7b500;
+}
+
+@media (max-width: 1100px) {
+    .realtors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .realtors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .realtors-grid {
+        grid-template-columns: 1fr;
+    }
+    .realtors-title {
+        font-size: 42px;
+    }
+}

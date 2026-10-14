@@ -1,0 +1,494 @@
+.rent-search {
+    padding: 20px 40px;
+    background: #ffffff;
+}
+
+.rent-box {
+    display: flex;
+    justify-content: center;
+}
+
+.rent-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr auto);
+    align-items: center;
+    gap: 15px;
+    width: 950px;
+    padding: 5px 20px;
+    background: #ffffff;
+    border: 2px solid #2f4f4f;
+    border-radius: 40px;
+}
+
+.rent-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.rent-item img {
+    width: 18px;
+}
+
+.rent-item input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+.rent-select {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.rent-divider {
+    width: 1px;
+    height: 25px;
+    background: #cccccc;
+}
+
+.rent-counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.rent-counter button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.rent-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #2f4f4f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.calendar-wrapper {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+    padding: 40px 20px 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.calendar-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.rent-filter-btn {
+    display: flex;
+    background: #2f4f4f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    gap: 15px;
+}
+
+.rent-filter-btn img {
+    margin-top: 10px;
+    display: flex;
+    height: 7px;
+    align-items: end;
+}
+
+.rent-active-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.rent-active {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 15px;
+    background: #ffffff;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.rent-active img {
+    width: 16px;
+}
+
+.remove {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.rent-filters {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    width: 950px;
+    margin: 15px auto 0;
+}
+
+.rent-sort {
+    justify-self: end;
+    font-size: 14px;
+}
+
+.rent-sort span {
+    color: #2f4f4f;
+}
+
+.rent-results {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.filters-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.filters-box {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.filters-close {
+    margin-top: -20px;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.filter-row.active {
+    color: #2f4f4f;
+    font-weight: bold;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.filter-options span {
+    cursor: pointer;
+    padding: 2px 6px;
+}
+
+.filter-options .active {
+    color: #2f4f4f;
+    font-weight: bold;
+}
+
+.filters-box::-webkit-scrollbar {
+    width: 4px;
+}
+
+.filters-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.filters-box::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.filters-box::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+@media (max-width: 768px) {
+    .filters-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filters-box {
+        width: 90%;
+        max-width: 380px;
+        max-height: 80vh;
+        overflow-y: auto;
+        padding: 20px;
+        border-radius: 16px;
+    }
+    .filter-row {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    .filter-options span {
+        padding: 2px 8px;
+        font-size: 13px;
+    }
+}
+
+.all-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.all-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #d9d9d9;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.all-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.all-like {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+    width: 25px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.all-like:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.all-like.active {
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(30%) sepia(90%) saturate(5000%) hue-rotate(340deg);
+}
+
+.all-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.all-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 18px;
+    padding: 28px;
+}
+
+.all-info h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.all-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+}
+
+.all-icons span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.all-icons img {
+    width: 16px;
+}
+
+.all-meta {
+    margin: 0;
+    font-size: 13px;
+}
+
+.all-desc {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #444444;
+}
+
+.all-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.all-time img {
+    width: 14px;
+    height: 14px;
+}
+
+.all-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    margin-top: auto;
+    padding-top: 22px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.all-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2f4f4f;
+    white-space: normal;
+}
+
+.all-btn {
+    flex-shrink: 0;
+    text-align: center;
+    white-space: normal;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #2f4f4f;
+    color: #ffffff;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.all-btn:hover {
+    background: #1f3a3a;
+}
+
+@media (max-width: 768px) {
+    .rent-search {
+        padding: 12px 16px;
+    }
+    .rent-grid {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 20px;
+    }
+    .rent-divider {
+        display: none;
+    }
+    .rent-filters {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .rent-filter-btn,
+    .rent-sort {
+        justify-self: start;
+    }
+    .calendar-wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 1000;
+        width: 95%;
+        max-width: 450px;
+        transform: translate(-50%, -50%);
+    }
+    .filters-box {
+        width: 90%;
+        max-width: 380px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .all-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+        padding: 12px 16px;
+    }
+    .all-img {
+        height: 150px;
+    }
+    .all-info {
+        gap: 14px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rent-search {
+        padding: 8px 12px;
+    }
+    .rent-item {
+        font-size: 12px;
+    }
+    .rent-btn {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+    .all-list {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 8px 12px;
+    }
+    .all-img {
+        height: 180px;
+    }
+    .all-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}
